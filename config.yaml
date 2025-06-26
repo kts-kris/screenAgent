@@ -1,0 +1,33 @@
+llm:
+  default_provider: "ollama"  # ollama, openai, anthropic
+  providers:
+    ollama:
+      base_url: "http://localhost:11434"
+      model: "auto"  # 自动检测可用模型，优先选择适合的模型
+      preferred_models: ["llama3.2", "qwen2.5", "gemma2", "phi3"]  # 偏好顺序
+    openai:
+      api_key: ""  # Set via environment variable OPENAI_API_KEY
+      model: "gpt-4o"
+    anthropic:
+      api_key: ""  # Set via environment variable ANTHROPIC_API_KEY
+      model: "claude-3-5-sonnet-20241022"
+
+capture:
+  screenshot_format: "PNG"
+  quality: 95
+  
+ocr:
+  language: "eng+chi_sim"  # English + Simplified Chinese
+  engine: "tesseract"
+
+ui:
+  theme: "dark"
+  show_preview: true
+  
+security:
+  max_execution_time: 30  # seconds
+  allowed_actions: ["click", "type", "scroll", "screenshot"]
+  
+logging:
+  level: "INFO"
+  file: "logs/app.log"

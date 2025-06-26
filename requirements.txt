@@ -1,0 +1,13 @@
+pillow>=10.0.0
+pytesseract>=0.3.10
+pyautogui>=0.9.54
+opencv-python>=4.8.0
+rich>=13.0.0
+questionary>=1.10.0
+pydantic>=2.0.0
+pyyaml>=6.0
+requests>=2.31.0
+anthropic>=0.3.0
+openai>=1.0.0
+ollama>=0.1.0
+typer>=0.9.0
