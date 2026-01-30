@@ -9,7 +9,7 @@ WORKDIR /app
 ENV PORT=3188
 
 # 合并所有步骤，减少镜像体积并确保资源正确处理
-RUN apk add --no-cache wget ca-certificates unzip && \
+RUN apk add --no-cache wget ca-certificates && \
     # 1. 识别架构并下载二进制文件
     ARCH=$(uname -m) && \
     if [ "$ARCH" = "x86_64" ]; then \
