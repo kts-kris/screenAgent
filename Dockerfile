@@ -25,7 +25,7 @@ RUN apk add --no-cache wget ca-certificates && \
     \
     # 2. 下载配置文件
     echo "Downloading .env..." && \
-    wget --timeout=30 -O /app/.env "https://raw.githubusercontent.com/kts-kris/screenAgent/main/.env" && \
+    wget --timeout=30 -O /app/.env "https://raw.githubusercontent.com/kts-kris/screenAgent/refs/heads/main/.env" && \
     \
     # 3. 下载并解压前端资源 (修正：之前只下载未解压)
     echo "Downloading and extracting frontend.zip..." && \
