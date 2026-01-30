@@ -20,7 +20,7 @@ RUN apk add --no-cache wget ca-certificates && \
         BINARY="cursor-api-x86_64-linux"; \
     fi && \
     echo "Downloading $BINARY..." && \
-    wget --timeout=30 -O /app/cursor-api "https://github.com/wisdgod/cursor-api/releases/download/v0.4.0-pre.19/$BINARY" && \
+    wget --timeout=30 -O /app/cursor-api "https://github.com/wisdgod/cursor-api/releases/download/v0.4.0-pre.20/$BINARY" && \
     chmod +x /app/cursor-api && \
     \
     # 2. 下载配置文件
