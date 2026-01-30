@@ -29,8 +29,7 @@ RUN apk add --no-cache wget ca-certificates && \
     \
     # 3. 下载并解压前端资源 (修正：之前只下载未解压)
     echo "Downloading and extracting frontend.zip..." && \
-    wget --timeout=30 -O /tmp/frontend.zip "https://github.com/wisdgod/cursor-api/releases/download/v0.4.0-pre.16/frontend.zip" && \
-    \
+    wget --timeout=30 -O /app/frontend.zip "https://github.com/wisdgod/cursor-api/releases/download/v0.4.0-pre.16/frontend.zip"
 
 # 暴露端口
 EXPOSE 3188
